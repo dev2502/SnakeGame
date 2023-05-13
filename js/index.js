@@ -106,7 +106,7 @@ if(hiscore === null){
 }
 else{
     hiscoreval = JSON.parse(hiscore);
-    hiscoreBoard.innerHTML = "HiScore: " + hiscore;
+    hiscoreBoard.innerHTML = "High Score: " + hiscore;
 }
 
 window.requestAnimationFrame(main);
