@@ -56,7 +56,7 @@ function gameEngine(){
         scoreBoard.innerHTML = "Score : " + score ;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x , y: snakeArr[0].y + inputDir.y});
 
-        let a=18;
+        let a=1;
         let b=18;
 
         food = { x: Math.round(a + (b-a)* Math.random()), y: Math.round(a + (b-a)* Math.random())}
@@ -105,7 +105,7 @@ if(hiscore === null){
     localStorage.setItem("hiscore", JSON.stringify(hiscoreval))
 }
 else{
-    // hiscoreval = JSON.parse(hiscore);
+    hiscoreval = JSON.parse(hiscore);
     hiscoreBoard.innerHTML = "HiScore: " + hiscore;
 }
 
